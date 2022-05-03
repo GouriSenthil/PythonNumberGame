@@ -14,6 +14,7 @@ for i in range(0,5):
        user = int(input("Enter the number"))
        break
       except:
+        ValueError:
         print("Invalid input enter a number Please")    
     if user == number:
         print("Hurray!!!")
