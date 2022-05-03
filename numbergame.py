@@ -8,8 +8,13 @@ print("Guess a number between 1 to 100")
 print("You get 5 chances")
 
 for i in range(0,5):
-    print("Guess ",i+1,":")
-    user = int(input("Enter the number"))
+    while True:
+      try:  
+       print("Guess ",i+1,":")
+       user = int(input("Enter the number"))
+       break
+      except:
+        print("Invalid input enter a number Please")    
     if user == number:
         print("Hurray!!!")
         print("You guessed the number",number)
